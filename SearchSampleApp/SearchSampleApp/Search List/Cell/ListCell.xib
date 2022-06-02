@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="zkT-cu-Lq6" customClass="ListCell" customModule="SearchApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zkT-cu-Lq6" id="gPT-gU-5dJ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEc-uI-Xt5">
+                        <rect key="frame" x="20" y="10" width="374" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggP-fg-Pug">
+                        <rect key="frame" x="20" y="54" width="41.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-HX-JXh">
+                        <rect key="frame" x="71.5" y="54" width="322.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dsZ-HX-JXh" secondAttribute="trailing" constant="20" id="1Av-RF-0NW"/>
+                    <constraint firstItem="nEc-uI-Xt5" firstAttribute="top" secondItem="gPT-gU-5dJ" secondAttribute="top" constant="10" id="61Z-wh-VdC"/>
+                    <constraint firstItem="ggP-fg-Pug" firstAttribute="top" secondItem="nEc-uI-Xt5" secondAttribute="bottom" constant="23" id="6rD-tb-vvo"/>
+                    <constraint firstAttribute="trailing" secondItem="nEc-uI-Xt5" secondAttribute="trailing" constant="20" id="9Vu-H2-IO0"/>
+                    <constraint firstAttribute="bottom" secondItem="dsZ-HX-JXh" secondAttribute="bottom" constant="15" id="Mpz-wT-iPV"/>
+                    <constraint firstItem="nEc-uI-Xt5" firstAttribute="leading" secondItem="gPT-gU-5dJ" secondAttribute="leading" constant="20" id="NMj-pI-9fg"/>
+                    <constraint firstAttribute="bottom" secondItem="ggP-fg-Pug" secondAttribute="bottom" constant="15" id="PnR-lK-0m7"/>
+                    <constraint firstItem="ggP-fg-Pug" firstAttribute="leading" secondItem="nEc-uI-Xt5" secondAttribute="leading" id="ZnR-PV-pCU"/>
+                    <constraint firstItem="dsZ-HX-JXh" firstAttribute="leading" secondItem="ggP-fg-Pug" secondAttribute="trailing" constant="10" id="fYM-DD-kQO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityName" destination="nEc-uI-Xt5" id="8pV-Y0-eO5"/>
+                <outlet property="countryName" destination="dsZ-HX-JXh" id="ozK-lv-Ji5"/>
+                <outlet property="stateName" destination="ggP-fg-Pug" id="czT-8y-SRn"/>
+            </connections>
+            <point key="canvasLocation" x="-13.043478260869566" y="74.330357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
